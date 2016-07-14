@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgrgameover"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/btn_new_game"
+        android:clickable="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="30dp">
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progressbar_timer" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/btnnewgame" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/btn_rate"
+            android:clickable="true"
+            android:layout_margin="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            >
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/progressbar_timer2" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/btnrate" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btn_share"
+            android:clickable="true"
+            android:layout_margin="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            >
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/progressbar_timer2" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/btnshare" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/btn_hight_score"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progressbar_timer" />
+        <ImageView
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btnhighscore"/>
+    </FrameLayout>
+</RelativeLayout>

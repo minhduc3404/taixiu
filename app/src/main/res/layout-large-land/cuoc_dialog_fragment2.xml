@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:minWidth="300dp"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_header_dialog">
+        <ImageView
+            android:id="@+id/ivPhoto1"
+            android:layout_width="44dp"
+            android:layout_height="44dp" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/text"
+            android:layout_weight="1"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:text="0"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/ivPhoto2"
+            android:layout_alignParentRight="true"
+            android:layout_width="44dp"
+            android:layout_height="44dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/ic_dialog_body"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_center">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow>
+                    <TableLayout>
+                        <TableRow>
+                            <Button android:id="@+id/btn7"
+                                android:text="7"
+                                />
+                            <Button android:id="@+id/btn8"  android:text="8"/>
+                            <Button android:id="@+id/btn9" android:text="9"/>
+                        </TableRow>
+                        <TableRow>
+                            <Button android:text="4"
+                                android:id="@+id/btn4" />
+                            <Button android:text="5" android:id="@+id/btn5"/>
+                            <Button android:text="6" android:id="@+id/btn6"/>
+                        </TableRow>
+                    </TableLayout>
+                    <Button
+                        android:id="@+id/btnMax"
+                        android:textSize="20sp"
+                        android:text="MAX"
+                        android:layout_height="match_parent"/>
+                </TableRow>
+                <TableRow>
+                    <TableLayout>
+                        <TableRow>
+                            <Button android:id="@+id/btn1" android:text="1"/>
+                            <Button android:id="@+id/btn2" android:text="2"/>
+                            <Button android:id="@+id/btn3" android:text="3"/>
+                        </TableRow>
+                        <TableRow>
+                            <Button android:id="@+id/btn0"
+                                android:text="0" />
+                            <Button
+                                android:text="00"
+                                android:id="@+id/btn00"
+                                android:layout_span="2"/>
+                        </TableRow>
+                    </TableLayout>
+                    <Button
+                        android:id="@+id/btnDel"
+                        android:text="DEL"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:layout_height="match_parent"/>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/cancel"
+                android:text="CANCEL"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btncancel"/>
+            <Button
+                android:id="@+id/confirm"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:text="CONFIRM"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnconfirm"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

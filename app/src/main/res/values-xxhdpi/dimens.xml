@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_xs">25dp</dimen>
+    <dimen name="sx23_magrin">15dp</dimen>
+    <dimen name="layout_xs_paddingLeft">35dp</dimen>
+    <dimen name="layout_xs_paddingRight">35dp</dimen>
+    <dimen name="layout_xs_paddingTop">18dp</dimen>
+    <dimen name="layout_xs_paddingBottom">30dp</dimen>
+</resources>
